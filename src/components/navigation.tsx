@@ -33,7 +33,7 @@ export class Navigation extends React.Component<propTypes, stateTypes> {
             <div className={`navigation__list ${this.state.navIsOpen && "isOpen"}`}>
               {this.props.items.map((item, i) => ( 
                 <div>
-                  <Link to={item.slug==="wordpress" ? `/` : `/${item.slug}`}>
+                  <Link to={item.slug==="cms.henrysbayhouse.co.uk" ? `/` : `/${item.slug}`}>
                     {item.title}
                   </Link>
                 </div>
