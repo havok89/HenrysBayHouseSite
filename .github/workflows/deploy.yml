@@ -51,5 +51,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.FOR_WEBHOOKS_SECRET }}
       with:
-        parent_runid: $GITHUB_RUN_ID
-        parent_repo: $GITHUB_REPOSITORY
+        parent_runid: ${{github.run_id}}
+        parent_repo: ${{github.repository}}
