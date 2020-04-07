@@ -17,21 +17,13 @@ module.exports = {
         www: false,
         SymLinksIfOwnerMatch: false,
         host: 'henrysbayhouse.co.uk', 
-        redirect: [
-          'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
-          {
-            from: 'henrysbayhouse.co.uk/stranraer/menu',
-            to: 'henrysbayhouse.co.uk/menu',
-          },
-          {
-            from: 'henrysbayhouse.co.uk/stranraer/contact',
-            to: 'henrysbayhouse.co.uk/contact',
-          },
-          {
-            from: 'henrysbayhouse.co.uk/stranraer',
-            to: 'henrysbayhouse.co.uk',
-          },
-        ]
+        custom: `
+            # This is a custom rule!
+            # This is a another custom rule!
+            Redirect /stranraer/menu /menu
+            Redirect /stranraer/contact /contact
+            Redirect /stranraer /
+        `,
       },
     },
     {
