@@ -37,7 +37,7 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
 query {
-  wordpressPage(id: { eq: "d02edaa7-6938-5638-8f7d-acf867118384" }) {
+  wordpressPage(id: { eq: "c435e602-e568-53df-92a2-3e3643fdd401" }) {
     title
     content
     acf {

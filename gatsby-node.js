@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
     // Gatsby uses Redux to manage its internal state.
     // Plugins and sites can use functions like "createPage"
     // to interact with Gatsby.
-    if(edge.node.id=="1942b791-35a6-5d41-a61e-f9a689c946de"){
+    if(edge.node.id=="5a426713-f9f4-5b80-aa66-65936f0deff9"){
       pageTemplate = path.resolve(`./src/templates/menu-page.tsx`)
     } else {
       pageTemplate = path.resolve(`./src/templates/page.tsx`)

@@ -35,7 +35,7 @@ jobs:
       with:
         name: public
     - name: Upload ftp
-      uses: sebastianpopp/ftp-action@releases/v1
+      uses: havok89/ftp-action@releases/v3
       with:
         host: ${{ secrets.ftp_host }}
         user: ${{ secrets.ftp_username }}
