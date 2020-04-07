@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 26.25" style="enable-background:new 0 0 30 26.25;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{clip-path:url(#SVGID_4_);enable-background:new    ;}
+	.st2{clip-path:url(#SVGID_6_);}
+	.st3{clip-path:url(#SVGID_8_);}
+	.st4{clip-path:url(#SVGID_10_);fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M1.07,26.25h27.86c0.59,0,1.07-0.48,1.07-1.07V22.5c0-0.59-0.48-1.07-1.07-1.07H1.07    C0.48,21.43,0,21.91,0,22.5v2.68C0,25.77,0.48,26.25,1.07,26.25z M1.07,15.54h27.86c0.59,0,1.07-0.48,1.07-1.07v-2.68    c0-0.59-0.48-1.07-1.07-1.07H1.07C0.48,10.71,0,11.19,0,11.79v2.68C0,15.06,0.48,15.54,1.07,15.54z M1.07,4.82h27.86    c0.59,0,1.07-0.48,1.07-1.07V1.07C30,0.48,29.52,0,28.93,0H1.07C0.48,0,0,0.48,0,1.07v2.68C0,4.34,0.48,4.82,1.07,4.82z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" style="overflow:visible;"/>
+	</clipPath>
+	<g class="st0">
+		<defs>
+			<rect id="SVGID_3_" y="-1.88" width="30" height="30"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_" style="overflow:visible;"/>
+		</clipPath>
+		<g class="st1">
+			<g>
+				<defs>
+					<rect id="SVGID_5_" y="-1.88" width="30" height="30"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_5_" style="overflow:visible;"/>
+				</clipPath>
+				<g class="st2">
+					<defs>
+						<rect id="SVGID_7_" y="-1.88" width="30" height="30"/>
+					</defs>
+					<clipPath id="SVGID_8_">
+						<use xlink:href="#SVGID_7_" style="overflow:visible;"/>
+					</clipPath>
+					<g class="st3">
+						<defs>
+							<rect id="SVGID_9_" y="-0.88" width="30" height="28"/>
+						</defs>
+						<clipPath id="SVGID_10_">
+							<use xlink:href="#SVGID_9_" style="overflow:visible;"/>
+						</clipPath>
+						<rect x="-5" y="-6.88" class="st4" width="40" height="40"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
