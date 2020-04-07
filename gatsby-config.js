@@ -10,6 +10,31 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        RewriteBase: true,
+        https: true,
+        www: false,
+        SymLinksIfOwnerMatch: false,
+        host: 'henrysbayhouse.co.uk', 
+        redirect: [
+          'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
+          {
+            from: 'henrysbayhouse.co.uk/stranraer/menu',
+            to: 'henrysbayhouse.co.uk/menu',
+          },
+          {
+            from: 'henrysbayhouse.co.uk/stranraer/contact',
+            to: 'henrysbayhouse.co.uk/contact',
+          },
+          {
+            from: 'henrysbayhouse.co.uk/stranraer',
+            to: 'henrysbayhouse.co.uk',
+          },
+        ]
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
