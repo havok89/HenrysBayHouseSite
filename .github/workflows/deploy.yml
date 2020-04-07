@@ -1,5 +1,5 @@
-name: Node CI
-on: [push]
+name: Build and deploy
+on: [push, repository_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
