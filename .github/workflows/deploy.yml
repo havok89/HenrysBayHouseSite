@@ -16,7 +16,7 @@ jobs:
       run: |
         npm install
         npm ci
-        gatsby build
+        npm run build
     - name: Upload public dir
       uses: actions/upload-artifact@v1
       with:
