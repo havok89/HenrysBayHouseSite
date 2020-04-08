@@ -3,6 +3,7 @@ import { SEOBlock } from "../components/SEO"
 import { graphql } from "gatsby"
 import { Styled, jsx } from "theme-ui"
 import Layout from "../components/layout"
+import "../scss/app.scss";
 
 export default ({ data }) => {
     return (
