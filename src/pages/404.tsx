@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import { SEOBlock } from "../components/SEO"
 import { Link } from "gatsby"
+import "../scss/app.scss";
+
 const NotFoundPage = () => (
   <Layout>
     <SEOBlock title="404: Not found" />
