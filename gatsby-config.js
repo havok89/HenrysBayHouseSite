@@ -57,6 +57,17 @@ module.exports = {
         path: path.join(__dirname, `src`, `libs`, `images`),
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-54500295-1",
+        head: false,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "henrysbayhouse.co.uk",
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
