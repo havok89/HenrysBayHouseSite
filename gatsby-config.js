@@ -3,6 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `Henrys Bay House Restaurant`,
     description: `this is the description`,
+    siteUrl: `https://henrysbayhouse.co.uk`
   },
   plugins: [
     `gatsby-plugin-theme-ui`,
@@ -70,5 +71,19 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/homepage`],
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://henrysbayhouse.co.uk',
+        sitemap: 'https://henrysbayhouse.co.uk/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }

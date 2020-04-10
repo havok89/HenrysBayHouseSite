@@ -23,7 +23,9 @@ exports.createPages = async ({ graphql, actions }) => {
             id
             slug
             status
-            template
+            acf {
+              gatsby_template
+            }
           }
         }
       }
@@ -38,7 +40,6 @@ exports.createPages = async ({ graphql, actions }) => {
   // Access query results via object destructuring
   const { allWordpressPage } = result.data
 
-  let pageTemplate
   // We want to create a detailed page for each
   // page node. We'll just use the WordPress Slug for the slug.
   // The Page ID is prefixed with 'PAGE_'
@@ -46,18 +47,14 @@ exports.createPages = async ({ graphql, actions }) => {
     // Gatsby uses Redux to manage its internal state.
     // Plugins and sites can use functions like "createPage"
     // to interact with Gatsby.
-    if(edge.node.id=="5a426713-f9f4-5b80-aa66-65936f0deff9"){
-      pageTemplate = path.resolve(`./src/templates/menu-page.tsx`)
-    } else {
-      pageTemplate = path.resolve(`./src/templates/page.tsx`)
-    }
+    
     createPage({
       // Each page is required to have a `path` as well
       // as a template component. The `context` is
       // optional but is often necessary so the template
       // can query data specific to each page.
       path: `/${edge.node.slug}/`,
-      component: slash(pageTemplate),
+      component: slash(path.resolve(`./src/templates/${edge.node.acf.gatsby_template}`)),
       context: {
         id: edge.node.id,
       },

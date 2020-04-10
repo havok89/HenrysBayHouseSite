@@ -8,7 +8,10 @@ import "../scss/app.scss";
 export default ({ data }) => {
     return (
       <Layout>
-        <SEOBlock title={data.wordpressPage.acf.meta_title} desc={data.wordpressPage.acf.meta_description} />
+        <SEOBlock 
+          title={data.wordpressPage.acf.meta_title} 
+          desc={data.wordpressPage.acf.meta_description} 
+          image={data.wordpressPage.acf.share_image.localFile.publicURL} />
         <div sx={{
           py: 3,
           px: 4,
@@ -30,13 +33,11 @@ export const pageQuery = graphql`
       acf {
         meta_description
         meta_title
-      }
-    }
-    site {
-      id
-      siteMetadata {
-        title
-        description
+        share_image {
+          localFile {
+            publicURL
+          }
+        }
       }
     }
   }

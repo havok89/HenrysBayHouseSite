@@ -11,7 +11,10 @@ import "../scss/app.scss";
 export default ({ data }) => {
   return (
     <Layout>
-      <SEOBlock title={data.wordpressPage.acf.meta_title} desc={data.wordpressPage.acf.meta_description} />
+      <SEOBlock 
+        title={data.wordpressPage.acf.meta_title} 
+        desc={data.wordpressPage.acf.meta_description} 
+        image={data.wordpressPage.acf.share_image.localFile.publicURL} />
       <Carousel showStatus={false} showArrows={true} showThumbs={false}> 
         {data.wordpressPage.acf.image_carousel.map((slide, i) => (
           <div>
@@ -43,6 +46,11 @@ query {
     acf {
       meta_description
       meta_title
+      share_image {
+        localFile {
+          publicURL
+        }
+      }
       image_carousel {
           link
           alt_text
