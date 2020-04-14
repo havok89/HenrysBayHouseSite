@@ -20,7 +20,7 @@ export const Header: React.FunctionComponent<propTypes> = props => {
           borderBottom: "5px solid",
           borderColor: "secondary"
         }}>
-            <div className="header__container">
+            <div className="header__container container container--text">
                 <div className="f-item">
                 <Link to={`/`}>
                     <img className="header__logo" src={logo}/>
