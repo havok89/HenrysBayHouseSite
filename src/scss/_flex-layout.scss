@@ -8,7 +8,12 @@
     &--column {
         flex-direction: column;
     }
-
+    &--menu {
+        justify-content: space-around;
+        @include respond-to(small) {
+            gap: 12px;
+        }
+    }
     &--reverse {
         flex-direction: row-reverse;
     }
@@ -36,6 +41,18 @@
     flex: 1;
     margin-right:1rem;
     // Contextual Modifiers
+
+    &__menu {
+        width:100%;
+        margin-bottom:1.5rem;
+        margin-right:0;
+        @include respond-to(small) {
+            width:calc(33.333% - 12px);
+        }
+        @include respond-to(medium) {
+            width:calc(25% - 12px);
+        }
+    }
 
     .two-col-text &,
     .location-block & {

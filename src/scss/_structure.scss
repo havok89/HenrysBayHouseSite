@@ -38,6 +38,7 @@
     &--text {
         max-width: 1220px;
     }
+    
     // Contextual Modifiers
     .site-footer & {
         @include respond-to(xs-small) {
@@ -83,3 +84,15 @@
         padding-left: 0;
     }
 } 
+
+h3 + p {
+    margin-top:0.2em;
+}
+
+.menu-spacer {
+    width:70%;
+    max-width:600px;
+    margin:0 auto 1.5rem;
+    height:1px;
+    border-bottom:1px dashed #888;
+}
