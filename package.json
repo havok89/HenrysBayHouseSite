@@ -12,7 +12,7 @@
     "@types/react": "^16.9.31",
     "@types/react-dom": "^16.9.6",
     "ftp-deploy": "^2.3.7",
-    "gatsby": "^2.13.73",
+    "gatsby": "^4.25.7",
     "gatsby-core-utils": "^1.0.28",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-google-analytics": "^2.2.2",
