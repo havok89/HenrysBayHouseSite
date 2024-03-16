@@ -41,15 +41,3 @@ jobs:
         user: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         localDir: "public"
-  cleanup_job:
-    needs: [deploy]
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-    - name: Delete artifacts
-      uses: christian-korneck/delete-run-artifacts-action@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.FOR_WEBHOOKS_SECRET }}
-      with:
-        parent_runid: ${{github.run_id}}
-        parent_repo: ${{github.repository}}
