@@ -92,7 +92,7 @@ export default ({ data }) => {
             
             <div className="menu-spacer"></div>
 
-            {/* Favourites */}
+            {/* Favourites 
             <div className="container container--text ta__center">
                 <Styled.h2>Henrys Favourites</Styled.h2>
             </div>
@@ -114,7 +114,7 @@ export default ({ data }) => {
                     </div>
                 ))}
             </div>
-            <div className="menu-spacer"></div>
+            <div className="menu-spacer"></div>*/}
 
             {/* Sweets */}
             <div className="container container--text ta__center">
