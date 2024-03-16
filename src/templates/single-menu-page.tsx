@@ -162,12 +162,6 @@ export const pageQuery = graphql`
               publicURL
             }
           }
-          favourites {
-            allergens
-            description
-            price
-            title
-          }
           grills {
             allergens
             price
