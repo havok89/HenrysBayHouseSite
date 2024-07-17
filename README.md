@@ -10,3 +10,6 @@ Pull the repo and install with
 
 Run site using
 `gatsby develop`
+
+
+build
