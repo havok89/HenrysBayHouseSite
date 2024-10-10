@@ -31,7 +31,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Download public dir
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: public
     - name: Upload ftp
