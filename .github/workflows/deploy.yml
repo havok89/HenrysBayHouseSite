@@ -34,6 +34,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: public
+        path: public
     - name: Upload ftp
       uses: havok89/ftp-action@releases/v3
       with:
