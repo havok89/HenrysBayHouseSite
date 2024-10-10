@@ -18,7 +18,7 @@ jobs:
         npm ci
         npm run build
     - name: Upload public dir
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: public
         path: public
@@ -31,13 +31,14 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Download public dir
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4
       with:
         name: public
+        path: public
     - name: Upload ftp
       uses: havok89/ftp-action@releases/v3
       with:
         host: ${{ secrets.ftp_host }}
         user: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        localDir: "public"
+        localDir: public
