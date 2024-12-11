@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [20.x]
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -20,8 +20,8 @@ jobs:
     - name: Upload public dir
       uses: actions/upload-artifact@v1
       with:
-        name: public
-        path: public
+        name: build
+        path: build
       env:
         CI: true
   deploy:
@@ -30,14 +30,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Download public dir
+    - name: Download build dir
       uses: actions/download-artifact@v1
       with:
-        name: public
+        name: build
     - name: Upload ftp
       uses: havok89/ftp-action@releases/v3
       with:
         host: ${{ secrets.ftp_host }}
         user: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        localDir: "public"
+        localDir: "build"
